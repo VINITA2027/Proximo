@@ -254,7 +254,7 @@ function updateAuthMode() {
   btnStudent.classList.toggle("active", isStudent);
   btnOrganizer.classList.toggle("active", !isStudent);
 
-  authHeader.textContent = isSignIn ? "Welcome Back" : "Join EventHub Pro";
+  authHeader.textContent = isSignIn ? "Welcome Back" : "Join Proximo";
   authSubheader.textContent = `${isSignIn ? "Sign In" : "Sign Up"} as ${isStudent ? "Student" : "Organizer"}`;
 
   studentOnly.forEach(el => el.classList.toggle("hidden", !( !isSignIn && isStudent )));
